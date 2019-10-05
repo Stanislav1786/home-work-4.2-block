@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #333333;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    /* overflow: hidden;*/
+}
+
+.button__line {
+    position: absolute;
+    display: block;
+}
+
+.button__line--top {
+    top: -100%;
+    left: 100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--top {
+    left: 100%;
+    transition: 1.5s;
+    transition-delay: 0.5s;
+}
+
+.button__line--bottom {
+    bottom: -100%;
+    left: 100%;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--left {
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(0deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--left {
+    bottom: -100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.button__line--right {
+    top: 100%;
+    right: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--right {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    background-color: #2196f3;
+    color: #333;
+    transition-delay: 0, 5s;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000000;
+    display: inline-block;
+    margin: 30px;
+}
+
+.container--sm {
+    width: 300px;
+}
+
+.conteiner--lg {
+    width: 600px;
+    /*width: 0;*/
+    background-color: lightgrey;
+}
+
+.block {
+    width: 150px;
+    height: 150px;
+    background-color: #cccccc;
+    position: absolute;
+}
+
+.block--1 {
+    background-color: red;
+    left: 0;
+    top: 0;
+}
+
+.block--2 {
+    background-color: green;
+    left: 150px;
+    top: 0px;
+}
+
+.block--3 {
+    background-color: blue;
+    left: 0;
+    top: 150px;
+}
+
+.block--4 {
+    background-color: yellow;
+    left: 150px;
+    top: 150px;
+}
+
+.block--5 {
+    background-color: blue;
+    left: -75px;
+    bottom: -75px;
+    z-index: -1;
+}
+
+.block--6 {
+    background-color: blue;
+    left: calc(50% - 75px);
+    bottom: -75px;
+    z-index: 1;
+}
+
+.block--7 {
+    background-color: blue;
+    right: -75px;
+    bottom: -75px;
+    z-index: -1;
+}
+
+.block--8 {
+    background-color: red;
+    /*width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    margin-left: 30px;
+    margin-top: 30px;*/
+    width: auto;
+    height: auto;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+}
