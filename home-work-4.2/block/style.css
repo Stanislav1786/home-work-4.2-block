@@ -173,3 +173,83 @@ body {
     bottom: 30px;
     left: 30px;
 }
+
+.menu {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu--frontpage {
+    height: 95vh;
+    align-items: center;
+}
+
+.menu__item {
+    flex-basis: 15%;
+    list-style: none;
+}
+
+.menu__item--frontpage {
+    height: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    outline: 5px dashed #867ef8;
+    outline-offset: -5px;
+}
+
+.menu__item--frontpage:hover {
+    animation: background 1s linear forwards;
+}
+
+.menu__item--frontpage a {
+    text-decoration: none;
+    color: #867ef8;
+    font-weight: bolder;
+}
+
+.item__container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item__container--figcaption {
+    padding: 20px;
+    background-color: rgb(247, 118, 118);
+}
+
+.item__container--figcaption a {
+    font-size: 25px;
+    color: white;
+}
+
+.item__container:hover {
+    outline: 1px solid black;
+}
+
+.item__container:hover>figcaption {
+    background-color: rgb(124, 94, 3);
+}
+
+.item__container:hover>figcaption a {
+    color: white;
+}
+
+.item__container--image {
+    width: 75%;
+    padding: 20px;
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
